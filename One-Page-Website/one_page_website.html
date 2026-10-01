@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A one-page food discovery website with a JavaScript modal lightbox gallery.">
+  <title>City Bites | One-Page Website</title>
+  <link rel="stylesheet" href="CSS/site.css">
+</head>
+<body>
+
+  <header id="home" class="top">
+    <nav class="nav">
+      <a class="logo" href="#home">City Bites</a>
+      <div class="links">
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <p class="kicker">ONE-PAGE WEBSITE • SESSION 2</p>
+      <h1>Simple food. Big flavor.</h1>
+      <p>
+        A fresh one-page website featuring a JavaScript lightbox gallery,
+        responsive design, and a completely different layout from the first project.
+      </p>
+      <a class="cta" href="#gallery">Explore the Gallery</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="story" class="section story">
+      <div>
+        <p class="kicker">OUR STORY</p>
+        <h2>A small collection of everyday favorites</h2>
+      </div>
+      <p>
+        City Bites is a sample food website created for the second session of the
+        One-Page Website Challenge. The page combines clean HTML structure,
+        custom CSS styling, and JavaScript interaction in one compact project.
+      </p>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <p class="kicker">PHOTO GALLERY</p>
+      <h2>Click a card to open the lightbox</h2>
+
+      <div class="gallery">
+        <button class="photo-card" type="button"
+          data-large="images/large/pasta.svg"
+          data-caption="Creamy Pasta — a warm bowl with herbs and tomato.">
+          <img src="images/thumbs/pasta-thumb.svg" alt="Creamy pasta in a bowl">
+          <span>
+            <strong>Creamy Pasta</strong>
+            <small>Comfort food</small>
+          </span>
+        </button>
+
+        <button class="photo-card" type="button"
+          data-large="images/large/burger.svg"
+          data-caption="Classic Burger — stacked with lettuce, cheese, and tomato.">
+          <img src="images/thumbs/burger-thumb.svg" alt="Classic burger with cheese">
+          <span>
+            <strong>Classic Burger</strong>
+            <small>Street favorite</small>
+          </span>
+        </button>
+
+        <button class="photo-card" type="button"
+          data-large="images/large/dessert.svg"
+          data-caption="Berry Dessert — a sweet layered dessert with fresh berries.">
+          <img src="images/thumbs/dessert-thumb.svg" alt="Layered berry dessert">
+          <span>
+            <strong>Berry Dessert</strong>
+            <small>Something sweet</small>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div>
+        <p class="kicker">VISIT</p>
+        <h2>Made for practice, built to work</h2>
+        <p>
+          This sample page demonstrates navigation, responsive columns,
+          separate thumbnail and enlarged images, and a working JavaScript modal gallery.
+        </p>
+      </div>
+      <div class="info-box">
+        <p><strong>Project Type:</strong> One-page website</p>
+        <p><strong>Built With:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Gallery:</strong> Modal lightbox</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>City Bites • One-Page Website Challenge • Session 2</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Food image viewer">
+    <button id="closeModal" class="modal-close" type="button" aria-label="Close">&times;</button>
+    <button id="prevImage" class="modal-arrow left" type="button" aria-label="Previous image">&#10094;</button>
+
+    <div class="modal-inner">
+      <img id="modalImage" src="" alt="">
+      <p id="modalCaption"></p>
+    </div>
+
+    <button id="nextImage" class="modal-arrow right" type="button" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script src="JS/one_page_website.js"></script>
+</body>
+</html>
