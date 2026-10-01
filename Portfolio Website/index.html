@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive student portfolio showcasing HTML, CSS, and JavaScript projects from Session 2.">
+  <title>Creative Web Portfolio | Session 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home">Creative Web Portfolio</a>
+
+      <button class="menu-btn" id="menuBtn" type="button"
+              aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">SESSION 2 • HTML • CSS • JAVASCRIPT</p>
+        <h1>Designing simple ideas into interactive web experiences.</h1>
+        <p class="hero-text">
+          This upgraded portfolio highlights the projects I created while learning
+          front-end web development, responsive design, JavaScript interaction,
+          GitHub, and website publishing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">See My Projects</a>
+          <a class="btn secondary" href="#skills">View Skills</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>3</strong><span>Featured Projects</span></div>
+          <div><strong>6+</strong><span>Core Skills</span></div>
+          <div><strong>100%</strong><span>Responsive Layout</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="browser-card">
+          <div class="browser-top">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="browser-screen">
+            <div class="code-line long"></div>
+            <div class="code-line medium"></div>
+            <div class="code-line short"></div>
+            <div class="mini-grid">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h2>Learning by creating real projects</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          I built this portfolio as an upgraded version of my one-page website work.
+          It shows how I can combine structure, design, and interaction in one
+          complete website. I have practiced writing semantic HTML, styling layouts
+          with CSS, adding JavaScript behavior, and preparing projects for publishing online.
+        </p>
+
+        <div class="about-note">
+          <strong>My approach</strong>
+          <p>
+            Keep the design clear, make navigation simple, test every interaction,
+            and improve the experience for both desktop and mobile users.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading row-heading">
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2>Selected course work</h2>
+        </div>
+
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="javascript">JavaScript</button>
+          <button class="filter" type="button" data-filter="responsive">Responsive</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="javascript responsive">
+          <div class="project-visual food">
+            <span class="project-number">01</span>
+            <div class="plate"></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">SESSION 2</p>
+            <h3>City Bites One-Page Website</h3>
+            <p>
+              A food-themed one-page website with a custom JavaScript lightbox,
+              previous and next controls, keyboard navigation, separate thumbnails,
+              enlarged images, and a responsive three-column gallery.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Lightbox</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript responsive">
+          <div class="project-visual travel">
+            <span class="project-number">02</span>
+            <div class="mountain"></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">SESSION 1</p>
+            <h3>Explore Canada Website</h3>
+            <p>
+              A responsive travel-themed one-page project that introduced modal
+              image viewing, gallery navigation, section links, and JavaScript
+              event handling.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Gallery</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript responsive">
+          <div class="project-visual portfolio-preview">
+            <span class="project-number">03</span>
+            <div class="window-shape"></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">FINAL PORTFOLIO</p>
+            <h3>Creative Web Portfolio</h3>
+            <p>
+              This upgraded portfolio organizes my course work into a polished
+              responsive website. JavaScript handles mobile navigation, project
+              filtering, scroll effects, and the live copyright year.
+            </p>
+            <div class="tags">
+              <span>Portfolio</span><span>Responsive</span><span>DOM</span><span>GitHub Pages</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">SKILLS</p>
+        <h2>What I practiced</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span>01</span>
+          <h3>HTML5</h3>
+          <p>Page structure, semantic sections, links, forms, images, and accessible markup.</p>
+        </div>
+        <div class="skill-card">
+          <span>02</span>
+          <h3>CSS3</h3>
+          <p>Layouts, spacing, typography, responsive grids, hover states, and media queries.</p>
+        </div>
+        <div class="skill-card">
+          <span>03</span>
+          <h3>JavaScript</h3>
+          <p>DOM selection, event listeners, galleries, menus, filters, and interactive behavior.</p>
+        </div>
+        <div class="skill-card">
+          <span>04</span>
+          <h3>Responsive Design</h3>
+          <p>Layouts that adapt smoothly from desktop screens to tablets and mobile devices.</p>
+        </div>
+        <div class="skill-card">
+          <span>05</span>
+          <h3>GitHub</h3>
+          <p>Repository organization, commits, project files, README documentation, and updates.</p>
+        </div>
+        <div class="skill-card">
+          <span>06</span>
+          <h3>GitHub Pages</h3>
+          <p>Preparing a static project so it can be deployed and viewed as a live website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading">
+        <p class="eyebrow">LEARNING JOURNEY</p>
+        <h2>From a basic page to a complete portfolio</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>Step 1</span>
+          <h3>Build the structure</h3>
+          <p>I learned to organize content with HTML and create clear page sections.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Step 2</span>
+          <h3>Improve the design</h3>
+          <p>I used CSS to create layouts, visual hierarchy, spacing, and responsive behavior.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Step 3</span>
+          <h3>Add interaction</h3>
+          <p>I used JavaScript to make menus, galleries, buttons, and filters respond to users.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Step 4</span>
+          <h3>Publish the work</h3>
+          <p>I organized the project for GitHub and prepared it for deployment with GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <p class="eyebrow">CONTACT / FINAL NOTE</p>
+        <h2>Thank you for viewing my portfolio.</h2>
+        <p>
+          This website represents the progress I made through the course and the
+          practical experience I gained with HTML, CSS, JavaScript, and publishing.
+        </p>
+        <a class="btn primary" href="#home">Back to Top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Creative Web Portfolio • Session 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
